@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="{{@site.lang}}">
+<head>
+    <!-- Compatibility -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{meta_title}}</title>
+
+    <!-- Icons -->
+    <meta name="apple-mobile-web-app-title" content="{{@site.title}}">
+    <meta name="application-name" content="{{@site.title}}">
+    {{#if @site.icon}}
+        <link rel="apple-touch-icon" href="{{@site.icon}}">{{/if}}
+    {{#if @site.icon}}
+        <link rel="icon" href="{{@site.icon}}">{{/if}}
+    <link rel="manifest" href="{{asset "manifest.json"}}">
+    {{#if @site.icon}}
+        <link rel="mask-icon" href="{{@site.icon}}" color="#7cb342">{{/if}}
+    <meta name="msapplication-TileColor" content="#7cb342">
+    {{#if @site.logo}}
+        <meta name="msapplication-TileImage" content="{{@site.logo}}">{{/if}}
+    <meta name="theme-color" content="#7cb342">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium|Montserrat:400,700&amp;lang=de"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{asset "css/main.css"}}">
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    {{navigation}}
+
+    <main class="mdl-layout__content">
+
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+
+        {{navigation type="secondary"}}
+
+    </main>
+
+    <div class="mdl-layout__obfuscator"></div>
+
+</div>
+
+
+<script type="text/javascript" defer src="{{asset "js/main.min.js"}}"></script>
+
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+
+</body>
+
+</html>

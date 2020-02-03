@@ -1,0 +1,34 @@
+{{! This is the post loop - each post will be output using this markup }}
+<div class="mdl-grid posts">
+    {{#foreach posts}}
+        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col {{post_class}}">
+            {{#if feature_image}}
+                <div class="mdl-card__media" style="background-image: url({{feature_image}});"></div>{{/if}}
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">{{{title}}}</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                {{excerpt words="100"}}&nbsp;…
+            </div>
+            <div class="mdl-card__supporting-text meta">
+                {{#if primary_author.profile_image }}
+                    <a href="{{primary_author.url}}"><img class="author-thumb" src="{{primary_author.profile_image }}"
+                                                          alt="{{primary_author.name}}"></a>{{/if}}
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect" id="author-tooltip-{{comment_id}}"
+                   href="{{primary_author.url}}">{{primary_author.name}}</a>
+                <span class="mdl-tooltip" for="author-tooltip-{{comment_id}}">{{primary_author.bio}}</span>
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD.MM.YYYY"}}</time>
+                {{#foreach tags}}
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect tag" href="{{url}}">#{{name}}</a>
+                {{/foreach}}
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                   href="{{url}}">Weiterlesen</a>
+            </div>
+        </div>
+    {{/foreach}}
+
+    {{! Previous/next page links - displayed on every page }}
+    {{pagination}}
+</div>

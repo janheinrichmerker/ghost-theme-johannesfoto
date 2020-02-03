@@ -1,0 +1,35 @@
+<header id="app-bar" class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">{{@site.title}}</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+            {{#foreach navigation}}
+                {{#has slug="instagram"}}
+                    <a class="mdl-navigation__link mdl-button mdl-js-button mdl-button--icon navigation-instagram"
+                       href="{{url}}" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                {{else has slug="youtube"}}
+                    <a class="mdl-navigation__link mdl-button mdl-js-button mdl-button--icon navigation-youtube"
+                       href="{{url}}" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                {{else}}
+                    <a class="mdl-navigation__link mdl-button mdl-js-button mdl-js-ripple-effect navigation-{{slug}}"
+                       href="{{url}}">{{label}}</a>
+                {{/has}}
+            {{/foreach}}
+        </nav>
+    </div>
+</header>
+
+<div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">{{@site.title}}</span>
+    <nav class="mdl-navigation">
+        {{#foreach navigation}}
+            <a class="mdl-navigation__link navigation-{{slug}} {{#if current}} mdl-navigation__link--current{{/if}}"
+               href="{{url}}">{{label}}</a>
+        {{/foreach}}
+    </nav>
+</div>
+

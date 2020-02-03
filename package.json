@@ -1,0 +1,83 @@
+{
+  "name": "johannesfoto",
+  "description": "A Material Design theme, custom made for the Johannes Foto Blog.",
+  "keywords": [
+    "ghost-theme"
+  ],
+  "version": "2.0.0",
+  "scripts": {
+    "build": "gulp bundle"
+  },
+  "engines": {
+    "ghost-api": "v3"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jan Heinrich Reimer",
+    "email": "jan.heinrich.reimer@reimer.software",
+    "url": "https://reimer.software"
+  },
+  "config": {
+    "posts_per_page": 4,
+    "image_sizes": {
+      "xxs": {
+        "width": 30
+      },
+      "xs": {
+        "width": 100
+      },
+      "s": {
+        "width": 300
+      },
+      "m": {
+        "width": 600
+      },
+      "l": {
+        "width": 1000
+      },
+      "xl": {
+        "width": 2000
+      }
+    }
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@types/jquery": "^3.3.31",
+    "@types/material-design-lite": "^1.1.15",
+    "@types/prismjs": "^1.16.0",
+    "baguettebox.js": "^1.11.0",
+    "exif-js": "^2.3.0",
+    "jquery": "^3.4.1",
+    "material-design-lite": "^1.3.0",
+    "prismjs": "^1.19.0",
+    "sass-material-colors": "^0.0.5"
+  },
+  "devDependencies": {
+    "@types/del": "^4.0.0",
+    "@types/gulp": "^4.0.6",
+    "@types/gulp-autoprefixer": "^0.0.32",
+    "@types/gulp-csso": "^1.0.31",
+    "@types/gulp-rename": "^0.0.33",
+    "@types/gulp-sass": "^4.0.0",
+    "@types/gulp-uglify": "^3.0.6",
+    "@types/gulp-zip": "^4.0.1",
+    "@types/node-sass": "^4.11.0",
+    "@types/webpack": "^4.41.4",
+    "@types/webpack-stream": "^3.2.10",
+    "bestzip": "^2.1.5",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.0.1",
+    "node-sass": "^4.13.1",
+    "webpack": "^4.41.5",
+    "webpack-stream": "^5.2.1"
+  }
+}

@@ -1,0 +1,78 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+    <div class="cover"{{#if feature_image}} style="background-image: url('{{feature_image}}')"{{else}}{{#if
+            @site.cover_image}} style="background-image: url('{{@site.cover_image}}')"{{/if}}{{/if}}>
+        <div class="cover-inner">
+            <h1 class="mdl-typography--display-3">{{title}}</h1>
+            <p class="mdl-typography--headline">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD.MM.YYYY"}}</time>
+            </p>
+            <p class="mdl-typography--headline">
+                {{#foreach tags}}
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="{{url}}">#{{name}}</a>
+                {{/foreach}}
+            </p>
+        </div>
+    </div>
+
+    <article class="{{post_class}}">
+        <section>
+            {{content}}
+        </section>
+        <footer>
+        </footer>
+    </article>
+
+    <aside>
+        {{#foreach authors}}
+            <section class="author">
+                {{#if profile_image}}
+                    <a href="{{url}}"><img class="mdl-shadow--4dp" src="{{profile_image}}" alt="{{name}}"></a>{{/if}}
+                <h4><a href="{{url}}">{{name}}</a></h4>
+
+                {{#if bio}}
+                    <p>{{bio}}</p>
+                {{else}}
+                    <p><a href="{{url}}">Mehr Beiträge</a> dieses Autoren lesen.</p>
+                {{/if}}
+
+                <p class="author-meta">
+                    {{#if location}}<a href="https://www.google.de/maps/search/{{encode location}}/" target="_blank"
+                                       title="{{location}}"><i class="material-icons">place</i> {{location}}</a>{{#if
+                            website}} • {{/if}}{{/if}}
+                    {{#if website}}<a href="{{website}}" target="_blank" title="{{name}}"><i
+                            class="material-icons">link</i> {{website}}</a>{{/if}}
+                </p>
+            </section>
+        {{/foreach}}
+
+        <section class="read-next mdl-grid">
+            {{#next_post}}
+                <section class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+                    {{#if feature_image}}
+                        <div class="media" style="background-image: url({{feature_image}});"></div>{{/if}}
+                    <h5><em>Als nächstes lesen:</em></h5>
+                    <h3>{{title}}</h3>
+                    <p>{{excerpt words="20"}}&nbsp;…</p>
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{url}}">Weiterlesen</a>
+                </section>
+            {{/next_post}}
+            {{#prev_post}}
+                <section class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--6-col-phone">
+                    {{#if feature_image}}
+                        <div class="media" style="background-image: url({{feature_image}});"></div>{{/if}}
+                    <h5><em>Das könnte dich interessieren:</em></h5>
+                    <h3>{{title}}</h3>
+                    <p>{{excerpt words="20"}}&nbsp;…</p>
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{url}}">Weiterlesen</a>
+                </section>
+            {{/prev_post}}
+        </section>
+    </aside>
+
+{{/post}}

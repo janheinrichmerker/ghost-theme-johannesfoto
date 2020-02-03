@@ -1,0 +1,25 @@
+<footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer--left-section">
+        {{#foreach navigation}}
+            <a class="navigation-{{slug}}" href="{{url}}">
+                {{#has slug="copyright"}}
+                    ©
+                {{else}}
+                    {{label}}
+                {{/has}}
+            </a>
+            {{#has slug="uncopyright"}}
+                {{#if @first}}
+                    {{date format="YYYY"}} {{@site.title}}
+                {{/if}}
+            {{/has}}
+            {{#unless @last}}
+                •
+            {{/unless}}
+        {{/foreach}}
+    </div>
+    <div class="mdl-mini-footer--right-section">
+        Proudly published with <a href="https://ghost.org" target="_blank">Ghost</a> and
+        hosted by <a href="https://uberspace.de/" target="_blank">Uberspace</a>.
+    </div>
+</footer>

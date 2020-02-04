@@ -27,8 +27,10 @@
     <span class="mdl-layout-title">{{@site.title}}</span>
     <nav class="mdl-navigation">
         {{#foreach navigation}}
-            <a class="mdl-navigation__link navigation-{{slug}} {{#if current}} mdl-navigation__link--current{{/if}}"
-               href="{{url}}">{{label}}</a>
+            <a class="mdl-navigation__link navigation-{{slug}} {{#if current}}mdl-navigation__link--current{{/if}}"
+               href="{{url}}">
+                {{label}}
+            </a>
         {{/foreach}}
     </nav>
 </div>

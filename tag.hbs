@@ -3,16 +3,18 @@
 
 {{! Everything inside the #tag tags pulls data from the tag }}
 {{#tag}}
-    <div class="cover"{{#if feature_image}} style="background-image: url('{{feature_image}}')"{{else}}{{#if
-            @site.cover_image}} style="background-image: url('{{@site.cover_image}}')"{{/if}}{{/if}}>
+    <div class="cover"
+        {{#if feature_image}}style="background-image: url('{{feature_image}}')"
+        {{else if @site.cover_image}}style="background-image: url('{{@site.cover_image}}')"
+        {{/if}}>
         <div class="cover-inner">
             <h1 class="mdl-typography--display-4">#{{name}}</h1>
             {{#if description}}
                 <p class="mdl-typography--headline">{{description}}</p>
             {{/if}}
             <p class="mdl-typography--headline">
-                <i class="material-icons">poll</i> {{plural ../pagination.total empty='Keine Beiträge'
-                                                            singular='% Beitrag' plural='% Beiträge'}}
+                <i class="material-icons">poll</i>
+                {{plural ../pagination.total empty='Keine Beiträge' singular='% Beitrag' plural='% Beiträge'}}
             </p>
         </div>
     </div>

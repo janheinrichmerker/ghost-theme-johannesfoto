@@ -13,15 +13,15 @@
     <meta name="apple-mobile-web-app-title" content="{{@site.title}}">
     <meta name="application-name" content="{{@site.title}}">
     {{#if @site.icon}}
-        <link rel="apple-touch-icon" href="{{@site.icon}}">{{/if}}
-    {{#if @site.icon}}
-        <link rel="icon" href="{{@site.icon}}">{{/if}}
+        <link rel="apple-touch-icon" href="{{@site.icon}}">
+        <link rel="icon" href="{{@site.icon}}">
+    {{/if}}
     <link rel="manifest" href="{{asset "manifest.json"}}">
-    {{#if @site.icon}}
-        <link rel="mask-icon" href="{{@site.icon}}" color="#7cb342">{{/if}}
     <meta name="msapplication-TileColor" content="#7cb342">
     {{#if @site.logo}}
-        <meta name="msapplication-TileImage" content="{{@site.logo}}">{{/if}}
+        <meta name="msapplication-TileImage" content="{{@site.logo}}">
+        <link rel="mask-icon" href="{{@site.logo}}" color="#7cb342">
+    {{/if}}
     <meta name="theme-color" content="#7cb342">
 
     <!-- Fonts -->
@@ -55,7 +55,7 @@
 </div>
 
 
-<script type="text/javascript" defer src="{{asset "js/main.min.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/main.min.js"}}"></script>
 
 {{! Ghost outputs important scripts and data with this tag }}
 {{ghost_foot}}

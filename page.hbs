@@ -5,8 +5,10 @@
 
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
-    <div class="cover"{{#if feature_image}} style="background-image: url('{{img_url feature_image}}')"{{else}}{{#if
-            @site.cover_image}} style="background-image: url('{{@site.cover_image}}')"{{/if}}{{/if}}>
+    <div class="cover"
+        {{#if feature_image}} style="background-image: url('{{img_url feature_image}}')"
+        {{else if @site.cover_image}} style="background-image: url('{{@site.cover_image}}')"
+        {{/if}}>
         <div class="cover-inner">
             <h1 class="mdl-typography--display-3">{{title}}</h1>
         </div>

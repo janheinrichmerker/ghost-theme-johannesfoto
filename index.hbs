@@ -1,11 +1,16 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-<div class="cover{{#if @site.cover_image}} has-image{{/if}}"{{#if @site.cover_image}}
-     style="background-image: url('{{@site.cover_image}}')"{{/if}}>
+<div class="cover {{#if @site.cover_image}}has-image{{/if}}"
+     {{#if @site.cover_image}}style="background-image: url('{{@site.cover_image}}')"{{/if}}>
     <div class="cover-inner">
-        {{#if @site.logo}}<img src="{{@site.logo}}"{{#if @site.title}} alt="{{@site.title}}"{{/if}}>{{/if}}
-        {{#if @site.description}}<p class="mdl-typography--headline">{{@site.description}}</p>{{/if}}
+        {{#if @site.logo}}
+            <img src="{{@site.logo}}"
+                 {{#if @site.title}}alt="{{@site.title}}"{{/if}}>
+        {{/if}}
+        {{#if @site.description}}
+            <p class="mdl-typography--headline">{{@site.description}}</p>
+        {{/if}}
     </div>
 </div>
 

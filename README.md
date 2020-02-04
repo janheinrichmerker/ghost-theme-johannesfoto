@@ -1,4 +1,4 @@
-# ghost-theme-johannesfoto
+# 👻 ghost-theme-johannesfoto
 
 A theme for [Ghost](https://github.com/tryghost/ghost/),
 implementing Material design guidelines,

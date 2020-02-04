@@ -1,13 +1,7 @@
 <footer class="mdl-mini-footer">
     <div class="mdl-mini-footer--left-section">
         {{#foreach navigation}}
-            <a class="navigation-{{slug}}" href="{{url}}">
-                {{#has slug="copyright"}}
-                    ©
-                {{else}}
-                    {{label}}
-                {{/has}}
-            </a>
+            <a class="navigation-{{slug}}" href="{{url}}">{{#has slug="copyright"}}©{{else}}{{label}}{{/has}}</a>
             {{#has slug="uncopyright"}}
                 {{#if @first}}
                     {{date format="YYYY"}} {{@site.title}}

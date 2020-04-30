@@ -50,7 +50,7 @@
     "@types/prismjs": "^1.16.0",
     "baguettebox.js": "^1.11.0",
     "exif-js": "^2.3.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "material-design-lite": "^1.3.0",
     "prismjs": "^1.19.0",
     "sass-material-colors": "^0.0.5"

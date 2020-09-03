@@ -67,7 +67,7 @@
     "@types/node-sass": "^4.11.0",
     "@types/webpack": "^4.41.4",
     "@types/webpack-stream": "^3.2.10",
-    "bestzip": "^2.1.5",
+    "bestzip": "^2.1.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",

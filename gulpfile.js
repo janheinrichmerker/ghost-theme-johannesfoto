@@ -1,7 +1,7 @@
 'use strict';
 
 const {series, parallel, src, dest} = require("gulp");
-const sass = require("gulp-sass");
+const sass = require("gulp-dart-sass");
 const del = require("del");
 const webpack = require("webpack-stream");
 const uglify = require("gulp-uglify");
@@ -13,7 +13,7 @@ const zip = require('gulp-zip');
 function styles() {
     return src("assets/css/main.scss")
         .pipe(sass({
-            outputStyle: "nested",
+            outputStyle: "expanded",
             precision: 10,
             includePaths: ['.'],
             onError: console.error.bind(console, 'Sass error:')

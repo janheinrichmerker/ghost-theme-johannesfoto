@@ -63,7 +63,7 @@
     "@types/gulp-zip": "^4.0.1",
     "@types/node-sass": "^4.11.0",
     "@types/webpack": "^5.28.0",
-    "@types/webpack-stream": "^3.2.10",
+    "@types/webpack-stream": "^3.2.15",
     "bestzip": "^2.1.7",
     "del": "^6.0.0",
     "gscan": "^4.34.0",

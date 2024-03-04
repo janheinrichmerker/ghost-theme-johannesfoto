@@ -863,10 +863,10 @@
     "@types/source-list-map" "*"
     source-map "^0.7.3"
 
-"@types/webpack-stream@^3.2.10":
-  version "3.2.12"
-  resolved "https://registry.yarnpkg.com/@types/webpack-stream/-/webpack-stream-3.2.12.tgz#cf13e64067a662a7acd8cd0524b3f64c86b0ecb6"
-  integrity sha512-znMUl4kKT0V0SwkUgRgwUNSAO7J5I/jdTCBNy3utkCsgMJ3IHp4FBTDwsQC+tfQ73TWeKIH05QNmbUYmeGThGw==
+"@types/webpack-stream@^3.2.15":
+  version "3.2.15"
+  resolved "https://registry.yarnpkg.com/@types/webpack-stream/-/webpack-stream-3.2.15.tgz#2b31c7762c740a751baf8a014dfe8a16633c1cdd"
+  integrity sha512-Rg/nwWB8lIrruModwACwewwTYlisYJ7trb/8ofl62L6E+aBg0YGua0TCgPmPPLkT28WJMs9O0+cGyH8CzYb7LQ==
   dependencies:
     "@types/node" "*"
     "@types/webpack" "^4"

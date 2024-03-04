@@ -709,10 +709,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/gulp-csso@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@types/gulp-csso/-/gulp-csso-4.0.1.tgz#d665d96b550448237ec0ebf909d15d102e951294"
-  integrity sha512-o+REOxQd5iQpGK5bSjtvwunr3x3XuYn2eEFyhndOM/MLugo/NP8F6+c/2Pmg9KACOvVKoZtNwNHmAk/qzGWgLA==
+"@types/gulp-csso@^4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@types/gulp-csso/-/gulp-csso-4.0.5.tgz#e8236cd95ca38ffadf8d63e6f050ce7a45774f9f"
+  integrity sha512-nLXnR/PzYKODohENwqdLcHnCbM087jC0ojUtT+1TFShwCjDypmf7J3Mia8+a3peTkBvgptk8vcWTZUFXVFZ+0w==
   dependencies:
     "@types/node" "*"
 

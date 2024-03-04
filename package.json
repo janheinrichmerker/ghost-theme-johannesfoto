@@ -58,7 +58,7 @@
     "@types/gulp-autoprefixer": "^0.0.33",
     "@types/gulp-csso": "^4.0.5",
     "@types/gulp-dart-sass": "^1.0.1",
-    "@types/gulp-rename": "^2.0.1",
+    "@types/gulp-rename": "^2.0.6",
     "@types/gulp-uglify": "^3.0.6",
     "@types/gulp-zip": "^4.0.1",
     "@types/node-sass": "^4.11.0",

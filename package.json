@@ -65,7 +65,7 @@
     "@types/webpack": "^5.28.5",
     "@types/webpack-stream": "^3.2.15",
     "bestzip": "^2.1.7",
-    "del": "^6.0.0",
+    "del": "^7.1.0",
     "gscan": "^4.42.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^9.0.0",

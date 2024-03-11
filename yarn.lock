@@ -1324,12 +1324,13 @@
   dependencies:
     "@types/node" "*"
 
-"@types/gulp-dart-sass@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@types/gulp-dart-sass/-/gulp-dart-sass-1.0.1.tgz#db98ce31a2b80e5ba414c1e7f9e3d259dc19d702"
-  integrity sha512-BCszpjyCu1ntSzfR7OSP5vib7U4bQxNQchu3j7ea71+22npTVdSUPYlm0jVtRD/W+1IZfzP7DZnmxuNMCozRIg==
+"@types/gulp-dart-sass@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@types/gulp-dart-sass/-/gulp-dart-sass-1.0.5.tgz#02f85c1929b84778d9fecd2348d4b8e8e454133b"
+  integrity sha512-NLH6JiTFYn1R88AS5wdJU3rKcXkIBeFEwsoU4PA9autKYzIfj8LxJpdCJidqt8etGsRv7PoxYiGTRP5a18y1Bg==
   dependencies:
-    "@types/sass" "*"
+    "@types/node" "*"
+    sass "^1.45.0"
 
 "@types/gulp-rename@^2.0.6":
   version "2.0.6"
@@ -1406,13 +1407,6 @@
   version "1.26.0"
   resolved "https://registry.yarnpkg.com/@types/prismjs/-/prismjs-1.26.0.tgz#a1c3809b0ad61c62cac6d4e0c56d610c910b7654"
   integrity sha512-ZTaqn/qSqUuAq1YwvOFQfVW1AR/oQJlLSZVustdjwI+GZ8kr0MSHBj0tsXPW1EqHubx50gtBEjbPGsdZwQwCjQ==
-
-"@types/sass@*":
-  version "1.43.1"
-  resolved "https://registry.yarnpkg.com/@types/sass/-/sass-1.43.1.tgz#86bb0168e9e881d7dade6eba16c9ed6d25dc2f68"
-  integrity sha512-BPdoIt1lfJ6B7rw35ncdwBZrAssjcwzI5LByIrYs+tpXlj/CAkuVdRsgZDdP4lq5EjyWzwxZCqAoFyHKFwp32g==
-  dependencies:
-    "@types/node" "*"
 
 "@types/sizzle@*":
   version "2.3.3"
@@ -3512,16 +3506,16 @@ gulp-csso@^4.0.1:
     plugin-error "^1.0.0"
     vinyl-sourcemaps-apply "^0.2.1"
 
-gulp-dart-sass@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gulp-dart-sass/-/gulp-dart-sass-1.0.2.tgz#20e33c236b48d557c91e8dfe67a2aef2b8a2e328"
-  integrity sha512-8fLttA824mbuc0jRVlGs00zWYZXBckat6INawx5kp66Eqsz5srNWTA51t0mbfB4C8a/a/GZ9muYLwXGklgAHlw==
+gulp-dart-sass@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-dart-sass/-/gulp-dart-sass-1.1.0.tgz#6273d4efb1525a7d95746ca5d3d791be17c84e5a"
+  integrity sha512-wc04rAk3ycBk4Z+vTVh5tPxgKNjtlfjqC7BiVG4ZvU8JswdzZs17Hn141RYTu+e7J8FivbL3VOhL5+Z+wvU0Ww==
   dependencies:
     chalk "^2.3.0"
     lodash.clonedeep "^4.3.2"
     plugin-error "^1.0.1"
     replace-ext "^1.0.0"
-    sass "^1.26.3"
+    sass "^1.49.0"
     strip-ansi "^4.0.0"
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
@@ -5324,10 +5318,10 @@ sass-material-colors@^0.0.5:
   resolved "https://registry.yarnpkg.com/sass-material-colors/-/sass-material-colors-0.0.5.tgz#b944539236c94e2d4ece35d2ee3fa22f10b2ed43"
   integrity sha512-WqBonSUkR5U9xs9adPVIymIdcT2Ku7PN0Q57yFfcLHj/E63wDqZ/Y5i/m9RmkRyr/jmR85g6ZIS053fyAR8G2A==
 
-sass@^1.26.3:
-  version "1.56.1"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.56.1.tgz#94d3910cd468fd075fa87f5bb17437a0b617d8a7"
-  integrity sha512-VpEyKpyBPCxE7qGDtOcdJ6fFbcpOM+Emu7uZLxVrkX8KVU/Dp5UF7WLvzqRuUhB6mqqQt1xffLoG+AndxTZrCQ==
+sass@^1.45.0, sass@^1.49.0:
+  version "1.71.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.71.1.tgz#dfb09c63ce63f89353777bbd4a88c0a38386ee54"
+  integrity sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"

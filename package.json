@@ -45,7 +45,7 @@
     "@fortawesome/fontawesome-free": "^6.1.1",
     "@types/jquery": "^3.3.31",
     "@types/material-design-lite": "^1.1.15",
-    "@types/prismjs": "^1.16.0",
+    "@types/prismjs": "^1.26.3",
     "baguettebox.js": "^1.11.0",
     "exif-js": "^2.3.0",
     "jquery": "^3.6.1",

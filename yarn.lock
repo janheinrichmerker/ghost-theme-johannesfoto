@@ -1340,10 +1340,10 @@
     "@types/node" "*"
     "@types/vinyl" "*"
 
-"@types/gulp-uglify@^3.0.6":
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/@types/gulp-uglify/-/gulp-uglify-3.0.7.tgz#9fb6f0e8782e7a851a535c632f72b91a4690469b"
-  integrity sha512-0zf9MJ6A+GB5V6hNb/RZzlIeCs0zmlvj77z/1NgOGy1qv73FSh0XcZA8Oa6q4/0xMb+t7q3HS9IUU2AUi1kxyw==
+"@types/gulp-uglify@^3.0.11":
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/@types/gulp-uglify/-/gulp-uglify-3.0.11.tgz#8b4090418c6d65f58492929cb760ca0c22476983"
+  integrity sha512-A2kjafbZmwHNzi2DmMjRNVgxdWFbg/o/c3sgl0Jk8OB9VpBTaMnoaTnxPO+a4vHckqTHXs+sZ0tNeGICrTP+Ug==
   dependencies:
     "@types/node" "*"
     "@types/uglify-js" "*"

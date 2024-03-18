@@ -54,7 +54,7 @@
     "sass-material-colors": "^0.0.5"
   },
   "devDependencies": {
-    "@types/gulp": "^4.0.6",
+    "@types/gulp": "^4.0.17",
     "@types/gulp-autoprefixer": "^0.0.33",
     "@types/gulp-csso": "^4.0.5",
     "@types/gulp-dart-sass": "^1.0.5",

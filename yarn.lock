@@ -1348,10 +1348,10 @@
     "@types/node" "*"
     "@types/uglify-js" "*"
 
-"@types/gulp-zip@^4.0.1":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@types/gulp-zip/-/gulp-zip-4.0.2.tgz#c686c9a16bff4bb2baa18436853e0eb49873ce1f"
-  integrity sha512-Ii+HkfXPvi86qRM+6iFO9EsnO2eoUX+MLuGgazigGoIzIm05USb7WQl7tqmiFHWWE6MofnO9QRb9INeCbEh6CA==
+"@types/gulp-zip@^4.0.4":
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@types/gulp-zip/-/gulp-zip-4.0.4.tgz#faae5d680f795fb8757b13a9c34411847a25cab5"
+  integrity sha512-iwWKFLIO90D5EtNCqUyiN4IhDA4OEPHdMUfj2l+upEl8nGxCrzPxIKZmpib8l0MqtuHI6FVZDAoDOnrCO9Kp3A==
   dependencies:
     "@types/node" "*"
 

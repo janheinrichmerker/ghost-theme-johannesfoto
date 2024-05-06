@@ -1135,10 +1135,10 @@
     "@tryghost/debug" "^0.1.27"
     split2 "4.2.0"
 
-"@tryghost/errors@^1.2.26", "@tryghost/errors@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-1.3.0.tgz#273beb4c91bd7eb8a44b2e4154e57cc5321ad9dc"
-  integrity sha512-XI3Gw+6Mbua7FiCdNMY+0bVQ0pP6YDY5UpIAd9YIb1PWtISmiqEA2St1bvBk08Blfks3+lFPigh/YUxjuTKjRw==
+"@tryghost/errors@^1.2.26", "@tryghost/errors@^1.3.0", "@tryghost/errors@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-1.3.2.tgz#3612f6f59ca07e37d1095f9eb31ff6a069a3b7f2"
+  integrity sha512-Aqi2vz7HHwN6p2juIYUu8vpMtaKavjULBKNnL0l1req9qXjPs90i/HV8zhvK0ceeWuPdEXaCkfHSRr/yxG3/uw==
   dependencies:
     "@stdlib/utils-copy" "^0.0.7"
     uuid "^9.0.0"
@@ -1271,12 +1271,12 @@
     "@tryghost/root-utils" "^0.3.25"
     semver "^7.3.5"
 
-"@tryghost/zip@^1.1.38":
-  version "1.1.40"
-  resolved "https://registry.yarnpkg.com/@tryghost/zip/-/zip-1.1.40.tgz#b470de2a38ef1c55215cc813f26ff310fd89e43e"
-  integrity sha512-1G3b/JNgjS4AGLVR//uc1IWKnvr+bep7YscFa6PuhEc7N5u2Pbx5sBNp+m6Q7BClJQjqas7KZ0cRHm/KCFYknw==
+"@tryghost/zip@^1.1.42":
+  version "1.1.42"
+  resolved "https://registry.yarnpkg.com/@tryghost/zip/-/zip-1.1.42.tgz#33f8ebaed17339db89a8b165563709385ed7f041"
+  integrity sha512-liEO01q0vztvcBmCT4m8fDEsDjXHzPOqJlXboMHOw/gTrjUkLVfBTZzooIgERvBRPuw60ICcPTtI2/OhiAoNrw==
   dependencies:
-    "@tryghost/errors" "^1.3.0"
+    "@tryghost/errors" "^1.3.2"
     archiver "^5.0.0"
     extract-zip "^2.0.1"
 
@@ -3095,10 +3095,10 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.10,
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
-gscan@^4.43.0:
-  version "4.43.0"
-  resolved "https://registry.yarnpkg.com/gscan/-/gscan-4.43.0.tgz#1711c232c3ff3f431c4e623f509ace347b873fb2"
-  integrity sha512-slk5kFRmvQMj1YwI/yEBe6CsBWAeViZHLki5v7h0w1/raKMwsACfRhp+t7KioGyGR0uvbaI8vb+ICFcy8ARJ7g==
+gscan@^4.43.1:
+  version "4.43.1"
+  resolved "https://registry.yarnpkg.com/gscan/-/gscan-4.43.1.tgz#82e7ad14be753143313b8487f7846e1c85762468"
+  integrity sha512-++xxksUOrIljzNYoSzEMsKUDSnXVQJmaFcaWtenEP0xzKnga+i1UR1q3UF3Wf1jD+R/8poCBDcfmu13h+HA54Q==
   dependencies:
     "@sentry/node" "^7.73.0"
     "@tryghost/config" "^0.2.18"
@@ -3108,7 +3108,7 @@ gscan@^4.43.0:
     "@tryghost/nql" "^0.12.0"
     "@tryghost/pretty-cli" "^1.2.38"
     "@tryghost/server" "^0.1.37"
-    "@tryghost/zip" "^1.1.38"
+    "@tryghost/zip" "^1.1.42"
     chalk "^4.1.2"
     common-tags "^1.8.2"
     express "^4.18.2"
